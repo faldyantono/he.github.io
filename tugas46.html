@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <p id="jawaban">Klik untuk merubah warna</p>
+  <button type="button" name="button" onclick="myFunction()">Ubah Warna</button>
+  <button type="button" name="button" onclick="reset()">Reset Warna</button>
+  <p id="p2"></p>
+  <script type="text/javascript">
+    function myFunction() {
+      var warna = prompt('Ketikan warna yang kamu inginkan(english)', "")
+      var x = document.getElementsByTagName("body");
+      var a = document.getElementById("p2");
+      if (warna == null) {
+        a.innerHTML = "lah NGAPA DICANCEL? LU BINGUNG???";
+      } else if (warna == "yellow") {
+        document.body.style.backgroundColor = "yellow";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "white") {
+        document.body.style.backgroundColor = "white";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "grey") {
+        document.body.style.backgroundColor = "grey";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "orange") {
+        document.body.style.backgroundColor = "orange";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "gold") {
+        document.body.style.backgroundColor = "gold";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "lightblue") {
+        document.body.style.backgroundColor = "lightblue";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "lightgrey") {
+        document.body.style.backgroundColor = "lightgrey";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "brown") {
+        document.body.style.backgroundColor = "brown";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "green") {
+        document.body.style.backgroundColor = "green";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "lightgreen") {
+        document.body.style.backgroundColor = "lightgreen";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "purple") {
+        document.body.style.backgroundColor = "purple";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "pink") {
+        document.body.style.backgroundColor = "pink";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "blue") {
+        document.body.style.backgroundColor = "blue";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else if (warna == "red") {
+        document.body.style.backgroundColor = "red";
+        a.innerHTML = "Berhasil merubah warna menjadi " + warna + " ya?.";
+      } else {
+        a.innerHTML = "MUKA BAPAK KAO " + warna;
+      }
+    }
+
+    function reset() {
+      document.body.style.backgroundColor = "white";
+      var a = document.getElementById("p2");
+      a.innerHTML = "LAH DIRESET?? BIAR NGAPA?? BINGUNG AMAT LU!!";
+    }
+  </script>
+</body>
+
+</html>
